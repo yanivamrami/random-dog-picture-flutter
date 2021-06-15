@@ -14,11 +14,8 @@ class RandomDogScreen extends StatefulWidget {
 String imageUrl;
 
 class _RandomDogScreenState extends State<RandomDogScreen> {
-  Future<String> dogPictureFuture;
-
   @override
   void initState() {
-    dogPictureFuture = ApiService().getDogPicture();
     super.initState();
   }
 
